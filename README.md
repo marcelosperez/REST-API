@@ -1,14 +1,23 @@
 # REST-API
 
-Mit Express.js erstellt das Projekt einfache REST-APIs.
-Mit Axios kann das Projekt Daten von anderen APIs bekommen und benutzen.
+# REST-API
 
-Das Projekt ist zum Lernen von:
+Dieses Projekt benutzt Node.js, Express.js und Axios, um moderne und fortgeschrittene REST-APIs zu entwickeln.
 
-Node.js
-Express.js
-HTTP-Anfragen
-REST-APIs
-JSON-Daten
+Das Projekt kann:
 
-Das Projekt enthält einfache Beispiele für API-Routen und API-Kommunikation.
+* eigene APIs erstellen
+* Daten von anderen APIs bekommen
+* HTTP-Anfragen bearbeiten
+* JSON-Daten senden und empfangen
+* verschiedene API-Systeme verbinden
+
+Das Ziel dieses Projekts ist es, praktische Erfahrung mit Backend-Entwicklung und API-Kommunikation zu sammeln.
+
+Technologien:
+
+* Node.js
+* Express.js
+* Axios
+* REST-API
+* JSON
