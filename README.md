@@ -1,7 +1,5 @@
 # REST-API
 
-# REST-API
-
 Dieses Projekt benutzt Node.js, Express.js und Axios, um moderne und fortgeschrittene REST-APIs zu entwickeln.
 
 Das Projekt kann:
