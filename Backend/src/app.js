@@ -1,6 +1,5 @@
-const express = require('express');
-const routes = require('./routes');
-
+import express from 'express';
+import routes from './routes.js';
 class App{
 
   constructor(){
@@ -20,4 +19,9 @@ class App{
 
 }
 
-module.exports = new App().server;
+export default new App().server;
+
+/*module.exports is not exporting the App class,
+and it's not exporting the App instance. 
+It is only exporting the Express server object 
+that was living inside it.*/
