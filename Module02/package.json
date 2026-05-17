@@ -1,8 +1,11 @@
 {
-  "name": "rest-apis",
+  "name": "module02-rest-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "courses-api.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node courses-api.js"
+  },
   "dependencies": {
     "express": "^5.2.1",
     "mysql2": "^3.22.3"
