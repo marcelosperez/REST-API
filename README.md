@@ -1,40 +1,48 @@
 # REST-API
 
-This repository contains small Node.js and Express examples for learning REST APIs.
+This repository contains several Node.js and Express REST API examples, including a MongoDB-backed session API in `Backend`.
 
 ## Project Layout
 
-* `Module01` contains early CRUD exercises, including the original `index8codex.js` in-memory version.
-* `Module02` contains the updated MySQL-backed REST API.
+* `Backend` contains the current Express + Mongoose API.
+* `Module01` contains early CRUD exercises, including the original in-memory examples.
+* `Module02` contains a MySQL-backed REST API example.
+
+## Backend
+
+The `Backend` application provides a simple user session endpoint using MongoDB and Mongoose.
+
+### Key behavior
+
+* Accepts `POST /sessions` with JSON payload `{ "email": "user@example.com" }`
+* validates that `email` is present and uses a basic email format check
+* if the user already exists, returns:
+  * `message: "User already exists"`
+  * the existing `user` record
+* if the user does not exist, creates and returns a new `user`
+
+### Run Backend
+
+```bash
+cd Backend
+npm install
+node src/server.js
+```
+
+> For local development, you can also use `npx nodemon src/server.js` if `nodemon` is installed.
+
+### Configuration
+
+The backend uses MongoDB. Do not store plain credentials in the README or source control. Instead, configure the connection string via an environment variable such as `MONGO_URI`.
+
+## Module01
+
+Contains early API practice files and in-memory CRUD examples.
 
 ## Module02
 
-The new API lives in [Module02/courses-api.js](Module02/courses-api.js).
-
-It now:
-
-* connects to MySQL using `mysql2`
-* uses the Dockerized local database at `127.0.0.1:3306`
-* authenticates with user `root` and password `********`
-* creates a dedicated database named `rest_api_db`
-* creates the `courses` table automatically on startup
-
-## Available Endpoints
-
-* `GET /courses`
-* `GET /courses/:id`
-* `POST /courses`
-* `PUT /courses/:id`
-* `DELETE /courses/:id`
-
-## Run Module02
-
-```bash
-cd Module02
-yarn install
-yarn start
-```
+Legacy MySQL REST API example using `mysql2`.
 
 ## Goal
 
-The project is meant to build practical experience with backend development, CRUD APIs, and database integration.
+The repository is meant to build practical experience with backend development, Express APIs, MongoDB integration, and session/user handling.
