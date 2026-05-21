@@ -1,16 +1,16 @@
 # REST-API
 
-This repository contains several Node.js and Express REST API examples, including a MongoDB-backed session API in `Backend`.
+This repository contains several Node.js and Express REST API examples, including a MongoDB-backed session API in `Module03`.
 
 ## Project Layout
 
-* `Backend` contains the current Express + Mongoose API.
-* `Module01` contains early CRUD exercises, including the original in-memory examples.
+* `Module03` contains the current Express + Mongoose API.
 * `Module02` contains a MySQL-backed REST API example.
+* `Module01` contains early CRUD exercises, including the original in-memory examples.
 
-## Backend
+## Module03
 
-The `Backend` application provides a simple user session endpoint using MongoDB and Mongoose.
+The `Module03` application provides a simple user session endpoint using MongoDB and Mongoose.
 
 ### Key behavior
 
@@ -21,10 +21,10 @@ The `Backend` application provides a simple user session endpoint using MongoDB 
   * the existing `user` record
 * if the user does not exist, creates and returns a new `user`
 
-### Run Backend
+### Run Module03
 
 ```bash
-cd Backend
+cd Module03
 npm install
 node src/server.js
 ```
